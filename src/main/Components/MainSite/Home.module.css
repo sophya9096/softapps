@@ -1,0 +1,114 @@
+@import "../../../shared/assets/Fonts/fonts";
+@import "../../../shared/assets/CSS/colors.css";
+
+.Home {
+    /* width: 100vw;
+    height: calc( 100vh - 66px); */
+    /* width: 100vw; */
+    /* Change Here */
+    height: calc(100vh - 66px);
+    /* font-family: var(--aargau) !important; */
+    padding: 2rem;
+    /* max-height: 1320px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 66px;
+}
+
+.HomeWidth {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* max-width: 1420px; */
+    /* border: 1px solid red; */
+    /* background-color: pink; */
+}
+
+.Left,
+.Right {
+    width: 50vw;
+    /* padding-top: 5rem; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: left;
+    /* border: 1px solid red; */
+}
+
+.Left {
+    justify-content: flex-start;
+}
+
+.LeftDiv {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    max-width: 550px;
+    width: 100%;
+    min-width: 450px;
+    position: relative;
+}
+
+.LeftDiv h1 {
+    font-family: var(--aargau) !important;
+    /* font-size: 5rem; */
+    font-size: calc(2.2vw + 2.2vh + 2.2vmin);
+    color: var(--secondary-red);
+}
+.LeftDiv p {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.LeftDiv span {
+    display: block;
+    width: 75%;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.LeftDiv a {
+    margin-top: 20px;
+    padding: 0.7rem 5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-purple);
+    position: relative;
+    top: 30px;
+    font-size: 1.1rem;
+}
+.LeftDiv .tagPortfolio {
+    left: 240px;
+    top: 7px;
+}
+.LeftDiv img {
+    position: absolute !important;
+    top: 13px !important;
+    width: 63px !important;
+    left: 10px !important;
+}
+
+.Right img {
+    /* border: 1px solid red; */
+    max-width: 550px;
+    width: 100%;
+    min-width: 350px;
+}
+
+@media (max-width: 775px) {
+    .Right img {
+        display: none;
+    }
+}
+@media (max-width: 555px) {
+    .LeftDiv .tagPortfolio {
+        left: 0;
+        top: 75px;
+    }
+}

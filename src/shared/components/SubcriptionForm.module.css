@@ -1,0 +1,80 @@
+.formContainer {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.formContainer img {
+    width: 200px;
+    object-fit: contain;
+}
+.form .formInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.form .formInput label {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.form .formInput input {
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid lightgray;
+    transition: 0.3s ease;
+}
+
+.form .formInput input:focus {
+    border: 1px solid #2a2a71;
+    border-radius: 0;
+}
+
+.form button {
+    margin: 20px 0;
+    width: 100%;
+    background: #2a2a71;
+    color: #fff;
+    border: 2px solid #2a2a71;
+    border-radius: 0;
+}
+.form button:hover {
+    color: #2a2a71;
+    background: #fff;
+}
+.cancelBtn {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    color: black !important;
+    padding: 10px 15px !important;
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0.15) !important;
+}
+.cancelBtn:hover {
+    background: rgb(226, 114, 137) !important;
+}
+
+@media (max-width: 550px) {
+    .formContainer {
+        width: 300px;
+    }
+    .form .formInput input {
+        width: 250px;
+    }
+}
+@media (max-width: 375px) {
+    .formContainer {
+        width: 250px;
+    }
+    .form .formInput input {
+        width: 200px;
+    }
+}

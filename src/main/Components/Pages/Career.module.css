@@ -1,0 +1,285 @@
+@import "../../../shared/assets/Fonts/fonts";
+@import "../../../shared/assets/CSS/colors.css";
+
+.Career {
+    padding-top: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Career h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.DropDown {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.DropDown_Main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    background-color: white;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid #c9c9c9;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    color: rgb(141, 141, 141);
+    transition: all 0.3s linear;
+}
+
+.DropDown_Main div img {
+    width: 22px;
+}
+
+.menu ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menuItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.menuItem .subMenu {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+    transition: transform 0.3s linear;
+}
+.menuItem:hover .subMenu {
+    transform: rotateX(0deg);
+}
+.menuItem span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    color: rgb(141, 141, 141);
+    border-bottom: 1px solid#c9c9c9;
+    background-color: white !important;
+}
+
+@media (min-width: 768px) {
+    .menuItem a {
+        font-size: 1rem;
+    }
+}
+
+.Form {
+    background-color: #f5f5f5;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    margin-top: 10px;
+}
+
+.FormContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.Left,
+.Right {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.FormElement {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6px 0;
+}
+
+.FormElement input,
+.FormElement textarea {
+    display: block;
+    width: 90%;
+    padding: 0.8rem 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #c9c9c9;
+    font: inherit;
+}
+.menu label,
+.FormElement p {
+    font-size: 0.85rem;
+    color: var(--primary-red);
+}
+
+.Form a {
+    display: block;
+    padding: 0.7rem 4rem;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-purple);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.CVFormElement {
+    width: 90%;
+    padding: 0.8rem 0.8rem;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #c9c9c9;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.CVFormElement div {
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #c9c9c9;
+    padding: 1.5rem;
+}
+.CVFormElement div img {
+    width: 30px;
+}
+.CVFormElement span {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.progressBar {
+    color: red;
+    height: 50px;
+    margin: auto;
+}
+
+/* header */
+
+.Header {
+    width: 100%;
+    position: fixed;
+    background: rgb(42, 42, 113);
+    background: linear-gradient(90deg, rgba(42, 42, 113, 1) 0%, rgba(77, 13, 82, 1) 26%, rgba(176, 18, 24, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.HeaderContainer {
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(42, 42, 113);
+    background: linear-gradient(90deg, rgba(42, 42, 113, 1) 0%, rgba(77, 13, 82, 1) 26%, rgba(176, 18, 24, 1) 100%);
+    z-index: 1;
+}
+
+.HeaderContainerLogo {
+    width: 150px;
+}
+.HeaderContainerLogo img {
+    width: 100%;
+}
+.HeaderBurger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.HeaderBurger span {
+    width: 22px;
+    margin: 2px 0;
+    height: 3px;
+    background-color: white;
+    transition: all 0.2s ease;
+}
+
+.HeaderMenu {
+    z-index: 0;
+    color: white;
+    padding: 0rem;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 0px;
+    transition: all 0.3s ease;
+}
+.HeaderMenu a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 12px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.height {
+    padding: 1rem;
+    display: flex;
+    height: 275px;
+}
+
+.height p {
+    margin: auto;
+}
+
+.middleDiv,
+.topDiv,
+.bottomDiv {
+    transition: all 0.2s ease;
+}
+
+.middleDiv {
+    display: none;
+}
+
+.topDiv {
+    transform: rotate(45deg) translate(0px, 6px);
+}
+
+.bottomDiv {
+    transform: rotate(-45deg) translate(-1px, -5px);
+}
+
+@media (max-width: 550px) {
+    .FormContainer {
+        flex-direction: column;
+    }
+    .FormContainer .Left,
+    .FormContainer .Right,
+    .FormElement input,
+    .FormElement textarea,
+    .CVFormElement {
+        width: 100%;
+    }
+    .DropDown_Main {
+        width: 225px;
+    }
+}

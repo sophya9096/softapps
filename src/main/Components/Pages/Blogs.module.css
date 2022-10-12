@@ -1,0 +1,171 @@
+@import "../../../shared/assets/Fonts/fonts";
+
+.Blogs {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 66px; */
+    align-items: center;
+}
+
+.Blogs p,
+.Blogs h1 {
+    font-family: "Ubuntu Regular";
+}
+
+.BlogHeader {
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.BlogHeaderOverlay {
+    width: 100%;
+    background: rgb(44, 40, 111);
+    background: linear-gradient(90deg, rgba(44, 40, 111, 0.55) 0%, rgba(173, 18, 25, 0.55) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BlogHeaderHeading {
+    width: 100%;
+    padding: 2vw 3vw;
+}
+.BlogHeaderHeading h1 {
+    font-size: calc(2vw + 20px);
+    color: white;
+}
+
+.Blog {
+    padding: 2vw 3vw;
+    text-align: center;
+    max-width: 1250px;
+    width: 90%;
+}
+
+.Header {
+    width: 100%;
+    position: fixed;
+    background: rgb(42, 42, 113);
+    background: linear-gradient(90deg, rgba(42, 42, 113, 1) 0%, rgba(77, 13, 82, 1) 26%, rgba(176, 18, 24, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.HeaderContainer {
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(42, 42, 113);
+    background: linear-gradient(90deg, rgba(42, 42, 113, 1) 0%, rgba(77, 13, 82, 1) 26%, rgba(176, 18, 24, 1) 100%);
+    z-index: 1;
+}
+
+.HeaderContainerLogo {
+    width: 150px;
+}
+.HeaderContainerLogo img {
+    width: 100%;
+}
+.HeaderBurger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.HeaderBurger span {
+    width: 22px;
+    margin: 2px 0;
+    height: 3px;
+    background-color: white;
+    transition: all 0.2s ease;
+}
+
+.HeaderMenu {
+    z-index: 0;
+    color: white;
+    padding: 0rem;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 0px;
+    transition: all 0.3s ease;
+}
+.HeaderMenu a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 12px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.height {
+    padding: 1rem;
+    display: flex;
+    height: 275px;
+}
+
+.height p {
+    margin: auto;
+}
+
+.middleDiv,
+.topDiv,
+.bottomDiv {
+    transition: all 0.2s ease;
+}
+
+.middleDiv {
+    display: none;
+}
+
+.topDiv {
+    transform: rotate(45deg) translate(0px, 6px);
+}
+
+.bottomDiv {
+    transform: rotate(-45deg) translate(-1px, -5px);
+}
+
+.mobFooter {
+    background: #2a2a71 !important;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.LogoFooter {
+    margin: auto;
+}
+.drawerIcons {
+    max-width: 450px;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.drawerIcons img {
+    width: 25px;
+    object-fit: contain;
+    margin: 0;
+}
+.drawerIcons a {
+    transition: 0.3s ease;
+}
+.drawerIcons a:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 1000px) {
+}

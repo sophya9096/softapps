@@ -1,0 +1,108 @@
+@import "../../../shared/assets/Fonts/fonts";
+@import "../../../shared/assets/CSS/colors.css";
+
+.Home {
+    /* width: 100vw;
+    height: calc( 100vh - 66px); */
+    overflow: hidden !important;
+    width: 100vw;
+    /* Change Here */
+    height: calc(100vh - 86px);
+    /* font-family: var(--aargau) !important; */
+    padding: 2rem;
+    /* max-height: 1320px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("../../../shared/assets/Images/Services.png"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-top: 66px;
+    text-align: left;
+}
+
+.HomeWidth {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    /* max-width: 1420px; */
+    /* border: 1px solid red; */
+    /* background-color: pink; */
+}
+
+.Left,
+.Right {
+    width: 100%;
+    /* padding-top: 5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.RightImg {
+    max-width: 850px;
+    width: 150% !important;
+    /* min-width: 300px; */
+}
+
+.Left {
+    justify-content: flex-start;
+}
+
+.LeftDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+}
+
+.LeftDiv h1 {
+    font-family: var(--aargau) !important;
+    /* font-size: 5rem; */
+    font-size: calc(2.2vw + 2.2vh + 2.2vmin);
+    color: var(--secondary-red);
+}
+.LeftDiv p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: -30px;
+}
+.LeftDiv span {
+    display: block;
+    max-width: 450px;
+    width: 100%;
+    min-width: 300px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.LeftDiv a {
+    margin-top: 20px;
+    padding: 0.7rem 4rem;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-purple);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.LeftDiv img {
+    position: absolute;
+    top: 13px;
+    width: 63px;
+    left: 10px;
+}
+
+@media (max-width: 775px) {
+    .RightImg {
+        display: none !important;
+    }
+    .Home {
+        background-image: none !important;
+    }
+    .LeftDiv p {
+        margin-bottom: -20px;
+    }
+}

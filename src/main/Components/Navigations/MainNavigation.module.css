@@ -1,0 +1,142 @@
+@import "../../../shared/assets/CSS/colors.css";
+
+.MainNavigation {
+    min-width: 95%;
+    height: 100%;
+    max-width: 1420px;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.Logo {
+    width: 20%;
+    object-fit: contain;
+    min-width: 150px;
+}
+.Logo img {
+    width: 100%;
+    max-width: 165px;
+}
+.NavLinks {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NavLinks a {
+    text-decoration: none;
+    color: var(--secondary-red);
+    font-weight: bold;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.NavLinks a.active,
+.NavLinks a:hover {
+    color: white !important;
+}
+
+.RightNavLinks {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.RightNavLinks a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.RightNavLinks a img {
+    width: 100%;
+    max-width: 20px;
+    margin-left: 12px;
+    transition: 0.3s ease;
+}
+
+.RightNavLinks a img:hover {
+    opacity: 0.7;
+}
+
+.drawerOpen {
+    width: 300px;
+    min-height: 100vh;
+    background: linear-gradient(270deg, var(--secondary-red), var(--primary-purple));
+    overflow-y: scroll;
+}
+.drawerOpen::-webkit-scrollbar {
+    display: none;
+}
+.drawerOpen img {
+    text-align: center;
+    margin: 30px;
+    cursor: pointer;
+}
+.drawerOpenLinks a {
+    box-sizing: border-box;
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px 0;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.drawerOpenLinks a:hover,
+.drawerOpenLinks a.active {
+    background: rgba(0, 0, 0, 0.09);
+    color: crimson;
+}
+
+.drawerIcons {
+    box-sizing: border-box;
+    padding: 20px;
+    /* border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray; */
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.drawerIcons img {
+    width: 25px;
+    object-fit: contain;
+    margin: 0;
+}
+.drawerIcons a {
+    transition: 0.3s ease;
+}
+.drawerIcons a:hover {
+    opacity: 0.7;
+}
+
+.headerMenuBtn {
+    color: #fff !important;
+    display: none !important;
+}
+
+@media (max-width: 1010px) {
+    .RightNavLinks {
+        display: none;
+    }
+    .NavLinks {
+        width: 80%;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 775px) {
+    .NavLinks {
+        display: none;
+    }
+    .headerMenuBtn {
+        display: inline-block !important;
+    }
+}

@@ -1,0 +1,119 @@
+@import "../../../shared/assets/Fonts/fonts";
+@import "../../../shared/assets/CSS/colors.css";
+
+.Home{
+    /* width: 100vw;
+    height: calc( 100vh - 66px); */
+    width: 100vw;
+    /* Change Here */
+    /* height: calc( 100vh); */
+    /* font-family: var(--aargau) !important; */
+    /* max-height: 1320px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 66px;
+}
+
+.HomeWidth{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    /* max-width: 1420px; */
+    /* border: 1px solid red; */
+    /* background-color: pink; */
+}
+
+.Left,.Right{
+    width: 50vw;
+    /* padding-top: 5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.Left{
+    justify-content: flex-start;
+
+}
+
+.LeftDiv{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+    
+}
+
+.LeftDiv h1 ,.LeftDiv span{
+    font-family: var(--aargau) !important;
+    /* font-size: 5rem; */
+    font-size: calc(2.2vw + 2.2vh + 2.2vmin);
+    color: var(--secondary-red);
+}
+.LeftDiv p {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.LeftDiv a{
+    padding:  .7rem 4rem ;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-purple);
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: block;
+}
+.LeftDiv img{
+    top: 13px;
+    width: 63px;
+    left: 10px;
+}
+
+.Right img{
+    /* border: 1px solid red; */
+    width: 65%;
+}
+
+.Form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Form a{
+    padding:  .7rem 4rem ;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-purple);
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: block;
+}
+
+.FormElement {
+    width: 100%;
+    margin-bottom: 12px;
+}
+.FormElement input, .FormElement textarea{
+    display: block;
+    width: 100%;
+    padding: .8rem .8rem;
+    border-radius: 8px;
+    border: 1px solid #707070;
+    font: inherit;
+}
+.FormElement p{
+    font-size: .85rem;
+    color: var(--primary-red);
+}

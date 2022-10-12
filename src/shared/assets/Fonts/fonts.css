@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Aargau";
+    font-style: normal;
+    src: url("./Aargau-Medium.ttf");
+}
+@font-face {
+    font-family: "Great Day";
+    font-style: normal;
+    src: url("./Great Day.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu Regular";
+    font-style: normal;
+    src: url("./Ubuntu-Light.ttf");
+}
+
+:root {
+    --aargau: "Aargau";
+    --great-day: "Great Day";
+}

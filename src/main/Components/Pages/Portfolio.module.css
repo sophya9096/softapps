@@ -1,0 +1,98 @@
+@import "../../../shared/assets/Fonts/fonts";
+@import "../../../shared/assets/CSS/colors.css";
+
+.fullPage {
+    scroll-snap-type: y mandatory;
+    max-height: 100vh;
+    overflow-y: scroll;
+    position: relative;
+}
+.slide {
+    position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.responsiveCarousel {
+    height: 400px;
+}
+
+.Portfolio {
+    width: 100%;
+    height: calc(100vh);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: pink; */
+    /* border: 1px solid red; */
+    /* margin-top: 66px; */
+}
+
+.Left,
+.Right {
+    width: 29%;
+    /* border: 1px solid red; */
+}
+
+.Center {
+    width: 40%;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+}
+
+.Left {
+    display: flex;
+    justify-content: flex-end;
+}
+.Arrow img {
+    cursor: pointer;
+    width: 45px;
+}
+
+.PortfolioSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    /* background-color: pink; */
+}
+
+.PortfolioSection img {
+    max-width: 280px !important;
+    width: 90%;
+    min-width: 100px;
+}
+.PortfolioSection h1 {
+    color: var(--primary-red);
+    font-size: calc(3vw + 14px);
+    line-height: 1;
+}
+.PortfolioSection p {
+    color: var(--primary-purple);
+    font-weight: bold;
+    font-size: calc(1vw + 14px);
+    letter-spacing: 0px;
+}
+.PortfolioSection a {
+    display: block;
+    margin-top: 10px;
+    padding: 0.7rem calc(2vw + 14px);
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-purple);
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.HideScrollBar::-webkit-scrollbar {
+    display: none;
+}
+.HideScrollBar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

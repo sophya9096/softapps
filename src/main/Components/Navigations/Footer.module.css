@@ -1,0 +1,52 @@
+.Footer {
+    width: 100%;
+    background-color: #362869;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+.footerContentMainDiv {
+    margin: auto;
+    min-width: 95%;
+    max-width: 1420px;
+    /* margin: 0 5%; */
+    /* background-color: #ccc; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footerContentColumn {
+    flex: 1;
+    padding: 15px 10px;
+    margin: auto;
+    max-width: 300px;
+    min-width: 250px;
+}
+.footerContentColumn1 {
+    flex: 1;
+    padding: 15px 10px;
+    max-width: 300px;
+    min-width: 250px;
+    margin: auto;
+}
+.footerContentColumn1Heading > h1 {
+    color: #fff;
+    padding: 0 0 20px 0;
+}
+.footerContentColumn1Link > p {
+    color: #df3d3d;
+    cursor: pointer;
+}
+.footerContentColumn1Link > p:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.sendEmailButton {
+    text-decoration: none;
+    color: #fff;
+}
+.sendEmailButton:hover {
+    color: #df3d3d !important;
+    /* text-decoration: none; */
+}

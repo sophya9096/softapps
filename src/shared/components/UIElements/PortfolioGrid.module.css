@@ -1,0 +1,153 @@
+@import "../../assets/Fonts/fonts";
+@import "../../assets/CSS/colors.css";
+
+.PortfolioGrid {
+    width: 100%;
+    /* height: calc( 100vh - 66px); */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: pink; */
+    /* border: 1px solid red; */
+}
+
+.PortfolioGrid_Banner {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Left {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Left_Container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+}
+
+.Left_Container h2 {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+.Left_Container h1 {
+    font-family: var(--aargau) !important;
+    font-size: 4.1rem;
+    line-height: 1;
+}
+.Left_Container p {
+    width: 80%;
+    text-align: right;
+}
+
+.Right {
+    height: 125%;
+    width: 30%;
+    min-width: 250px;
+    background-color: var(--tertiary-red);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+}
+
+.Right_Carousel {
+    height: 100%;
+    flex: 1;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Right_Carousel_Image {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.Right_Carousel_Image a {
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.Right_Carousel_Image img {
+    width: 100%;
+    height: 40% !important;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.Right_Carousel_Arrow_Images {
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+.Right_Carousel_Arrow_Images img {
+    width: 25px !important;
+    margin-left: 10px !important;
+    cursor: pointer !important;
+    position: relative;
+}
+
+.LeftLeft {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.LeftLeft_Container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.LeftLeft_Container h2 {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+.LeftLeft_Container h1 {
+    font-family: var(--aargau) !important;
+    font-size: 4.1rem;
+    line-height: 1;
+}
+.LeftLeft_Container p {
+    width: 80%;
+}
+.UpperText {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .PortfolioGrid_Banner {
+        margin-top: 50px;
+        height: 60%;
+    }
+    .Left,
+    .LeftLeft {
+        display: none;
+    }
+    .Right {
+        width: 55%;
+    }
+    .UpperText {
+        display: block;
+        color: #ffff;
+        font-size: calc(10px + 1.75vw);
+    }
+}
